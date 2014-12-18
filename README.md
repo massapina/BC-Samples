@@ -1,4 +1,4 @@
-README: How to configure and run the Netswipe Mobile Web API Sample:
+Netswipe Mobile Web API Sample
 
 
 Step 1: Adding your API credentials & scan reference
