@@ -1,25 +1,23 @@
-Netswipe Mobile Web - Code Sample for Using the Netswipe Mobile Web API
+Configuring & running the Netswipe Mobile Web API Sample
 
 
-Before using this Sample
--------------------------------------------
-Before using this Sample, please log into https://netswipe.com and get your keys from section "Settings/API credentials/Netswipe Mobile Web". 
+Step 1: Adding your API credentials & scan reference
+-----------------------------------------------------
 
-You will need:
- - Public identifier;
- - Active checksum key;
- - Active encryption key;
- 
-After that you will need to enter these keys together with a sting of your reference for each scan (max. 100 characters) in /classes/token-generator.php of this Sample.
+1) Insert your API credentials:
+publicIdentifier: YOURPUBLICIDENTIFIER,
+$encryptionKey = base64_decode("YOURENCRYPTIONKEY");
+$checksumKey = base64_decode("YOURCHECKSUMKEY");
 
+Note: Log into https://netswipe.com, and you can find your public identifier, encryption and checksum keys on the "Settings" page under "API credentials".
 
-Running this Sample 
--------------------------------------------
-In order to run this Sample, you need a web server running PHP 5. 
-
-We recommend the Apache web server.
-
-Once the files in the Sample archive have been decompressed and uploaded on your hosting space, go to the root of your Sample directory with your web browser, and the Sample will run for you.
+2) Add your reference for each scan (max. 100 characters):
+$message = $timestamp.";"."YOURREFERENCE";
 
 
+Step 2: Running the Netswipe Mobile Web API Sample
+-----------------------------------------------------
 
+1) Decompress the Netswipe Mobile Web API Sample archive and upload it to your webserver running PHP5 (Apache recommended).
+
+2) Access the Netswipe Mobile Web API Sample root directory in a supported browser and it will run automatically.
