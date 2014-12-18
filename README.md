@@ -1,4 +1,4 @@
-Configuring & running the Netswipe Mobile Web API Sample
+Configuring & running the Netswipe Mobile Web API Sample:
 
 
 Step 1: Adding your API credentials & scan reference
