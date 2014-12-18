@@ -1,8 +1,7 @@
-Netswipe Mobile Web API Sample
+##Using the Netswipe Mobile Web API Sample
 
 
-Step 1: Adding your API credentials & scan reference
------------------------------------------------------
+###Step 1: Adding your API credentials & scan reference
 
 ######Insert your API credentials
 <TODO: Add file name(s)>
@@ -20,8 +19,7 @@ $message = $timestamp.";"."YOURREFERENCE";
 ```
 
 
-Step 2: Running the Netswipe Mobile Web API Sample
------------------------------------------------------
+###Step 2: Running the Netswipe Mobile Web API Sample
 
 1. Decompress the Netswipe Mobile Web API Sample archive and upload it to your webserver running PHP5 (Apache recommended).
 2. Access the Netswipe Mobile Web API Sample root directory in a supported browser and it will run automatically.
