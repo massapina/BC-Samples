@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>6634D056-3CFE-4893-99F5-8F1050B72EFF</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Jumio</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>D9A04BEF-1C25-417F-BF81-853E60F18F3B</key>
+		<string>https://svn.sbnd.int/svn/jumio_samples</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>src/samples/iOS/Jumio.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>D9A04BEF-1C25-417F-BF81-853E60F18F3B</key>
+		<string>../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>D9A04BEF-1C25-417F-BF81-853E60F18F3B</key>
+		<string>https://svn.sbnd.int/svn/jumio_samples</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://svn.sbnd.int/svn/jumio_samples/src/samples/iOS/Jumio.xcodeproj</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>D9A04BEF-1C25-417F-BF81-853E60F18F3B</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D9A04BEF-1C25-417F-BF81-853E60F18F3B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>JUMIO_svn</string>
+		</dict>
+	</array>
+</dict>
+</plist>
