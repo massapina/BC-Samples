@@ -10,7 +10,7 @@
 
 @implementation RootViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad{
     [super viewDidLoad];
     
     // Do any additional setup after loading the view from its nib.
@@ -46,14 +46,13 @@
 }
 
 
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
 
-- (BOOL)connectedToInternet
-{
+- (BOOL)connectedToInternet{
     NSURL *nsUrl = [NSURL URLWithString:@"https://www.jumio.com"];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:nsUrl];
     [request setHTTPMethod:@"HEAD"];
@@ -69,7 +68,7 @@
 }
 
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation{
     // Return YES for supported orientations
 	return UIInterfaceOrientationLandscapeRight == interfaceOrientation || UIInterfaceOrientationLandscapeLeft == interfaceOrientation ||
     UIInterfaceOrientationPortrait == interfaceOrientation;
