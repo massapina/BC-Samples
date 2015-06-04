@@ -11,10 +11,16 @@
 				var cardExpiryDate = cardInformation.cardExpiryDate;
 				var cardHolderName = cardInformation.cardHolderName;
 				var cardType = cardInformation.cardType;
+				var cardAccountNumber = cardInformation.cardAccountNumber;
+				var cardSortCode = cardInformation.cardSortCode;
 				
 		        document.getElementById('ccNumber').value = cardNumber;
 		        document.getElementById('ccExpiryDate').value = cardExpiryDate;
 		        document.getElementById('ccHolderName').value = cardHolderName;
+				document.getElementById('ccType').value = cardType;
+				document.getElementById('ccAccountNumber').value = cardAccountNumber;
+				document.getElementById('ccSortCode').value = cardSortCode;
+				
 		    };
 		    var yourWarningFunction = function (warning) {
 				var code = warning.code;
@@ -100,6 +106,9 @@
 						<input id="ccHolderName" name="ccHolderName" type="text" placeholder="Name">
 						<label for="cvv">Card security code</label>
 						<input id="cvv" name="cvv" type="tel" placeholder="123">
+						<input id="ccType" name="ccType" type="hidden" value="">
+						<input id="ccAccountNumber" name="ccAccountNumber" type="hidden" value="">
+						<input id="ccSortCode" name="ccSortCode" type="hidden" value="">
 						<button type="submit" name="btnConfirm" value="confirm">Confirm Data &raquo;</button>
 					</form>
 				</div>

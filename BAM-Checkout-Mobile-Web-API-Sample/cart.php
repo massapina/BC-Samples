@@ -1,14 +1,20 @@
 <?php
-$ccNumber 		= '';
-$ccExpiryDate 	= '';
-$ccHolderName 	= '';
-$cvv 			= '';
+$ccNumber 		 = '';
+$ccExpiryDate 	 = '';
+$ccHolderName 	 = '';
+$cvv 			 = '';
+$ccType 		 = '';
+$ccAccountNumber = '';
+$ccSortCode      = '';
 
 if (isset($_POST['btnConfirm']) && $_POST['btnConfirm'] == "confirm") {
-	$ccNumber 		= isset($_POST['ccNumber']) ? $_POST['ccNumber'] : "N/A";
-	$ccExpiryDate 	= isset($_POST['ccExpiryDate']) ? $_POST['ccExpiryDate'] : "N/A";
-	$ccHolderName 	= isset($_POST['ccHolderName']) ? $_POST['ccHolderName'] : "N/A";
-	$cvv 			= isset($_POST['cvv']) ? $_POST['cvv'] : "N/A";
+	$ccNumber 		 = isset($_POST['ccNumber']) ? $_POST['ccNumber'] : "N/A";
+	$ccExpiryDate 	 = isset($_POST['ccExpiryDate']) ? $_POST['ccExpiryDate'] : "N/A";
+	$ccHolderName 	 = isset($_POST['ccHolderName']) ? $_POST['ccHolderName'] : "N/A";
+	$cvv 			 = isset($_POST['cvv']) ? $_POST['cvv'] : "N/A";
+	$ccType 		 = isset($_POST['ccType']) ? $_POST['ccType'] : "N/A";
+	$ccAccountNumber = isset($_POST['ccAccountNumber']) ? $_POST['ccAccountNumber'] : "N/A";
+	$ccSortCode 	 = isset($_POST['ccSortCode']) ? $_POST['ccSortCode'] : "N/A";
 } else {
 	die('invalid data');
 }
@@ -48,9 +54,12 @@ if (isset($_POST['btnConfirm']) && $_POST['btnConfirm'] == "confirm") {
 			<div class="payment">
 				<i>Payment method: Credit card<br/>
 				Credit card number: <?php echo $ccNumber; ?><br/>
+				Credit card type: <?php echo $ccType; ?><br/>
 				Valid through: <?php echo $ccExpiryDate; ?><br/>
 				Name: <?php echo $ccHolderName; ?><br/>
-				Card security code: <?php echo $cvv; ?>
+				Card security code: <?php echo $cvv; ?><br/>
+				Account number: <?php echo $ccAccountNumber; ?><br/>
+				Sort code: <?php echo $ccSortCode; ?>
 				</i> 
 				<br>
 				<strong>Total amount: $9.99</strong>
