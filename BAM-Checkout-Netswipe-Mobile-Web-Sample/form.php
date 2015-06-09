@@ -12,8 +12,6 @@
 				var cardSecurityCode = yourEvent.detail.cardSecurityCode;
 				var cardHolderName = yourEvent.detail.cardHolderName;
 				var cardType = yourEvent.detail.cardType;
-				var cardAccountNumber = typeof(yourEvent.detail.cardAccountNumber) == "undefined" ? '' : yourEvent.detail.cardAccountNumber;
-				var cardSortCode = typeof(yourEvent.detail.cardSortCode) == "undefined" ? '' : yourEvent.detail.cardSortCode;
 				
 				var f = document.createElement('form');
 				f.setAttribute('method', 'post');
@@ -48,19 +46,7 @@
 				i.setAttribute('name', 'ccType');
 				i.setAttribute('value', cardType);
 				f.appendChild(i);
-				
-				i = document.createElement('input'); 
-				i.setAttribute('type', 'text');
-				i.setAttribute('name', 'ccAccountNumber');
-				i.setAttribute('value', cardAccountNumber);
-				f.appendChild(i);
-				
-				i = document.createElement('input'); 
-				i.setAttribute('type', 'text');
-				i.setAttribute('name', 'ccSortCode');
-				i.setAttribute('value', cardSortCode);
-				f.appendChild(i);
-				
+								
 				document.getElementsByTagName('body')[0].appendChild(f);
 				
 				f.submit();

@@ -4,8 +4,6 @@ $ccExpiryDate 	 = isset($_POST['ccExpiryDate']) ? $_POST['ccExpiryDate'] : "N/A"
 $ccHolderName 	 = isset($_POST['ccHolderName']) ? $_POST['ccHolderName'] : "N/A";
 $cvv 			 = isset($_POST['cvv']) ? $_POST['cvv'] : "N/A";
 $ccType 		 = isset($_POST['ccType']) ? $_POST['ccType'] : "N/A";
-$ccAccountNumber = isset($_POST['ccAccountNumber']) ? $_POST['ccAccountNumber'] : "N/A";
-$ccSortCode 	 = isset($_POST['ccSortCode']) ? $_POST['ccSortCode'] : "N/A";
 ?>
 <!DOCTYPE html>
 <html>
@@ -45,9 +43,7 @@ $ccSortCode 	 = isset($_POST['ccSortCode']) ? $_POST['ccSortCode'] : "N/A";
 				Credit card type: <?php echo $ccType; ?><br/>
 				Valid through: <?php echo $ccExpiryDate; ?><br/>
 				Name: <?php echo $ccHolderName; ?><br/>
-				Card security code: <?php echo $cvv; ?><br/>
-				Account number: <?php echo $ccAccountNumber; ?><br/>
-				Sort code: <?php echo $ccSortCode; ?>
+				Card security code: <?php echo $cvv; ?>
 				</i> 
 				<br>
 				<strong>Total amount: $9.99</strong>
