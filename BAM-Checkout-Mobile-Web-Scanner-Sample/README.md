@@ -1,10 +1,10 @@
-#Using the Netswipe Mobile Web Sample
+#Using the BAM Checkout Mobile Web Sample
 
-1. Decompress the Netswipe Mobile Web Sample archive and upload it to your webserver running PHP5 (Apache recommended).
-2. Configure the Netswipe Mobile Web Sample as mentioned below.
-3. Access the Netswipe Mobile Web Sample root directory in a supported browser and it will run automatically.
+1. Upload the BAM Checkout Mobile Web Sample archive to your webserver running PHP5 (Apache recommended).
+2. Configure the BAM Checkout Mobile Web Sample as mentioned below.
+3. Access the BAM Checkout Mobile Web Sample root directory in a supported browser and it will run automatically.
 
-##Step 2: Configure the Netswipe Mobile Web Sample
+##Step 2: Configure the BAM Checkout Mobile Web Sample
 
 Insert your API credentials and reference for each scan (max. 100 characters) in the class `token-generator.php`:
 ```
