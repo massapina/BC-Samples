@@ -13,4 +13,4 @@ private static $ENCRYPTION_KEY = "";
 private static $CHECKSUM_KEY = "";
 private static $REFERENCE = "";
 ```
-Note: Log into https://netswipe.com, and you can find your public identifier, encryption and checksum keys on the "Settings" page under "API credentials".
+Note: Log into your Jumio merchant backend, and you can find your public identifier, encryption and checksum keys on the "Settings" page under "API credentials".
