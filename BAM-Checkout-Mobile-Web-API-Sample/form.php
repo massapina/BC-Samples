@@ -59,7 +59,7 @@
 		    }
 		</script>
 		
-		<script type="text/javascript" src="https://netswipe.com/widget/nsmobileweb/widget-sdk.js"></script>
+		<script type="text/javascript" src="https://static-bcmw.jumio.com/js/widget-sdk.js"></script>
 	</head>
 	<body>
 		<img id="imgCont" style="position:absolute;top:50000px;"/>

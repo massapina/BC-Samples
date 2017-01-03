@@ -40,11 +40,11 @@ class TokenGenerator{
 	 * @return string Base64 encoded authorization token.
 	 */
 	public static function generateToken(){
-        	$encryptionKey = base64_decode(self::$ENCRYPTION_KEY);
+        $encryptionKey = base64_decode(self::$ENCRYPTION_KEY);
 		$checksumKey = base64_decode(self::$CHECKSUM_KEY);
 
 		// Step 1. a
-		$timestamp = floor(microtime(true)*1000);
+		$timestamp = number_format(microtime(true)*1000,0,'.','');
 		$message = $timestamp.";".self::$REFERENCE;
 
 		// Manual implementation of PKCS7 padding, as not provided by PHP's mcrypt functions 

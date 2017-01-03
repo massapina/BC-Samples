@@ -62,9 +62,9 @@
 				 alert("errorCode = " + code + " errorMessage = " + message);
 			});	
 		</script>
-		<link rel="stylesheet" type="text/css" href="https://netswipe.com/widget/nsmobileweb/styles/min.main.css"> 
-		
-		<script type="text/javascript" src="https://netswipe.com/widget/nsmobileweb/widget-sdk.js"></script>
+		<link rel="stylesheet" type="text/css" href="https://netswipe.com/widget/nsmobileweb/styles/min.main.css">
+
+        <script type="text/javascript" src="https://static-bcmw.jumio.com/js/widget-sdk.js"></script>
 	</head>
 	<body data-ng-app="nshtml5sdk">
 		<header>
