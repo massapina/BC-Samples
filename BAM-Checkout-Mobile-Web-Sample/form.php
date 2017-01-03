@@ -62,7 +62,7 @@
 				 alert("errorCode = " + code + " errorMessage = " + message);
 			});	
 		</script>
-		<link rel="stylesheet" type="text/css" href="https://netswipe.com/widget/nsmobileweb/styles/min.main.css">
+		<link rel="stylesheet" type="text/css" href="https://static-bcmw.jumio.com/styles/main.min.css">
 
         <script type="text/javascript" src="https://static-bcmw.jumio.com/js/widget-sdk.js"></script>
 	</head>
