@@ -32,31 +32,30 @@
 				var message = error.message;
 				alert("errorCode = " + code + " errorMessage = " + message);
 			};
-		    function extractCardInformation(e) {
-				var ccImage = document.getElementById('imgCont');
-					ccImage.src = e.target.result;
-			
-				var yourCustomEvent = document.createEvent('CustomEvent');
-					yourCustomEvent.initCustomEvent('bc.creditCardScan', false, true, {
-						publicIdentifier: "<?php echo TokenGenerator::getPublicIdentifier(); ?>",
-						authorizationToken: "<?php echo TokenGenerator::generateToken(); ?>",
-						cardImage: ccImage,
-						onSuccess: yourSuccessFunction,
-						onWarning: yourWarningFunction,
-						onError: yourErrorFunction
-					});
-
-		        document.getElementById('YOURID').dispatchEvent(yourCustomEvent);
-		    }
-		    function readUploadImage(upload) {
-		        if (upload.files && upload.files.length > 0) {
-		            var reader = new FileReader();
-						reader.onload = extractCardInformation;
-						reader.readAsDataURL(upload.files[0]);
-		        } else {
-		            alert("no file to upload");
-		        }
-		    }
+			function readUploadImage(upload) {
+				if (upload.files && upload.files.length > 0) {
+					var ccImageFile = upload.files[0];
+					var urlCreator = window.URL || window.webkitURL;
+					var ccImageUrl = urlCreator.createObjectURL(ccImageFile);
+					var ccImage = new window.Image();
+					ccImage.onload = function scan() {
+						urlCreator.revokeObjectURL(ccImageUrl);
+						var yourCustomEvent = document.createEvent('CustomEvent');
+						yourCustomEvent.initCustomEvent('bc.creditCardScan', false, true, {
+							publicIdentifier: "<?php echo TokenGenerator::getPublicIdentifier(); ?>",
+							authorizationToken: "<?php echo TokenGenerator::generateToken(); ?>",
+							cardImage: ccImage,
+							onSuccess: yourSuccessFunction,
+							onWarning: yourWarningFunction,
+							onError: yourErrorFunction
+						});
+						document.getElementById('YOURID').dispatchEvent(yourCustomEvent);
+					};
+					ccImage.src = ccImageUrl;
+				} else {
+					alert("no file to upload");
+				}
+			}
 		</script>
 		
 		<script type="text/javascript" src="https://static-bcmw.jumio.com/js/widget-sdk.js"></script>
